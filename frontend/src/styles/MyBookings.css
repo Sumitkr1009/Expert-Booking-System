@@ -1,0 +1,30 @@
+.search-section {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.my-booking-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.status {
+  font-weight: 600;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.confirmed {
+  color: green;
+}
+
+.status.completed {
+  color: blue;
+}

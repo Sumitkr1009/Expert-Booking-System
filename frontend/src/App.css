@@ -1,0 +1,43 @@
+/* Root Layout */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional global reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Remove Vite default styles */
+
+.logo,
+.read-the-docs {
+  display: none;
+}
+
+/* Utility spacing */
+
+.section-spacing {
+  margin-top: 30px;
+}
+
+/* Centered content helper */
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive container helper */
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0 15px;
+  }
+}

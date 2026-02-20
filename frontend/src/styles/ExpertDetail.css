@@ -1,0 +1,38 @@
+.slot-group {
+  margin-bottom: 20px;
+}
+
+.slot-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.slot-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slot-btn.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.slot-btn.available:hover {
+  background-color: #43a047;
+}
+
+.slot-btn.booked {
+  background-color: #bdbdbd;
+  color: white;
+  cursor: not-allowed;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
