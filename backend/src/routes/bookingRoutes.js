@@ -9,7 +9,7 @@ const {
 } = require("../controllers/bookingController");
 
 
-// 🔥 IMPORTANT: This route MUST come before router.get("/")
+// IMPORTANT: This route must come before router.get("/")
 router.get("/expert/:expertId", async (req, res) => {
   try {
     const bookings = await Booking.find({

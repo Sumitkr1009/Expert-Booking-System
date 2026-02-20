@@ -23,7 +23,7 @@ function BookingPage() {
     return <p>No slot selected.</p>;
   }
 
-  // 🔎 Frontend Validation
+  // Frontend Validation
   const validate = () => {
     const newErrors = {};
 

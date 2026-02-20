@@ -37,7 +37,7 @@ const bookingSchema = new mongoose.Schema(
 );
 
 
-// 🔥 Compound Unique Index (DOUBLE BOOKING PREVENTION)
+// Compound Unique Index (DOUBLE BOOKING PREVENTION)
 bookingSchema.index(
   { expertId: 1, date: 1, timeSlot: 1 },
   { unique: true }

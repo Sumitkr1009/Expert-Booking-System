@@ -18,9 +18,7 @@ function MyBookings() {
       setLoading(true);
       setError("");
 
-      const { data } = await axios.get(
-        `/bookings?email=${email}`
-      );
+      const { data } = await axios.get(`/bookings?email=${email}`);
 
       if (data.length === 0) {
         setBookings([]);
@@ -28,11 +26,8 @@ function MyBookings() {
       } else {
         setBookings(data);
       }
-
     } catch (err) {
-      setError(
-        err.response?.data?.message || "Error fetching bookings"
-      );
+      setError(err.response?.data?.message || "Error fetching bookings");
     } finally {
       setLoading(false);
     }
@@ -50,10 +45,7 @@ function MyBookings() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <button
-          className="primary-btn"
-          onClick={handleSearch}
-        >
+        <button className="primary-btn" onClick={handleSearch}>
           Search
         </button>
       </div>
@@ -63,11 +55,13 @@ function MyBookings() {
 
       {bookings.map((booking) => (
         <div key={booking._id} className="my-booking-card">
-          <h3>
-  Expert: {booking.expertId?.name || "Expert Removed"}
-</h3>
-          <p><strong>Date:</strong> {booking.date}</p>
-          <p><strong>Time:</strong> {booking.timeSlot}</p>
+          <h3>Expert: {booking.expertId?.name || "Expert Removed"}</h3>
+          <p>
+            <strong>Date:</strong> {booking.date}
+          </p>
+          <p>
+            <strong>Time:</strong> {booking.timeSlot}
+          </p>
           <p>
             <strong>Status:</strong>{" "}
             <span className={`status ${booking.status.toLowerCase()}`}>

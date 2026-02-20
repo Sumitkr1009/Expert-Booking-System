@@ -37,7 +37,7 @@ function ExpertDetail() {
     }
   };
 
-  // 🔥 Real-time slot disable
+  // Real-time slot disable
   useEffect(() => {
     socket.on("slotBooked", (data) => {
       if (data.expertId === id) {

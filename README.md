@@ -1,24 +1,22 @@
-# 🚀 Expert Booking System
+# Expert Booking System
 
 A full-stack Expert Booking System built using React, Node.js, Express, and MongoDB.
 
----
+## Features
 
-## 📌 Features
-
-- 🔍 Search & Filter Experts
-- 📄 Pagination (5 experts per page)
-- 👤 Expert Detail Page
-- 📅 Slot Booking System
-- 🚫 Prevent Double Booking
-- ⚡ Real-time Slot Update using Socket.io
-- 📩 My Bookings (Search by Email)
-- ✅ Frontend & Backend Validation
-- 🎨 Clean and Responsive UI
+-  Search & Filter Experts
+-  Pagination (5 experts per page)
+-  Expert Detail Page
+-  Slot Booking System
+-  Prevent Double Booking
+-  Real-time Slot Update using Socket.io
+-  My Bookings (Search by Email)
+-  Frontend & Backend Validation
+-  Clean and Responsive UI
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React (Vite)
@@ -34,9 +32,8 @@ A full-stack Expert Booking System built using React, Node.js, Express, and Mong
 - Mongoose
 - Socket.io
 
----
 
-## ⚙️ Installation
+## Installation
 
 ### Backend
 cd backend
@@ -53,10 +50,7 @@ cd frontend
 npm install
 npm run dev
 
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Sumit Kumar**
 

@@ -1,9 +1,7 @@
 const Expert = require("../models/Expert");
 const asyncHandler = require("../middleware/asyncHandler");
 
-// @desc Get all experts (Pagination + Search + Filter)
 // @route GET /api/experts
-// @access Public
 exports.getExperts = asyncHandler(async (req, res) => {
   const page = Number(req.query.page) || 1;
   const limit = 5;
@@ -34,9 +32,7 @@ exports.getExperts = asyncHandler(async (req, res) => {
 });
 
 
-// @desc Get single expert
 // @route GET /api/experts/:id
-// @access Public
 exports.getExpertById = asyncHandler(async (req, res) => {
   const expert = await Expert.findById(req.params.id);
 
