@@ -41,14 +41,23 @@ npm install
 npm run dev
 
 Create `.env` file:
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/expertBookingDB
+MONGO_URI=mongodb+srv://sumit:Sumit1234@cluster0.ns2pdnv.mongodb.net/
+
+### Live Demo:
+https://expert-booking-system.onrender.com
 
 
 ### Frontend
 cd frontend
 npm install
 npm run dev
+
+Create `.env` file:
+VITE_API_URL = https://expert-booking-system.onrender.com
+
+### Live Demo:
+https://vercel.com/sumit-kumars-projects-12530951/expert-booking-system
+
 
 ## Author
 

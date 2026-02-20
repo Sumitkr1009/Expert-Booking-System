@@ -1,16 +1,12 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 const Expert = require("./models/Expert");
 
 dotenv.config();
+connectDB();
 
-mongoose.connect(process.env.MONGO_URI);
-
-const seedExperts = async () => {
-  try {
-    await Expert.deleteMany();
-
-    await Expert.insertMany([
+const experts = [
       {
         name: "Rahul Sharma",
         category: "Tech",
@@ -167,14 +163,19 @@ const seedExperts = async () => {
           },
         ],
       },
-    ]);
+    ];
 
-    console.log("✅ Experts Seeded Successfully");
+  const importData = async () => {
+  try {
+    await Expert.deleteMany();
+    await Expert.insertMany(experts);
+
+    console.log("Experts Seeded Successfully!");
     process.exit();
   } catch (error) {
-    console.error("❌ Seeding Failed:", error);
+    console.error(error);
     process.exit(1);
   }
 };
 
-seedExperts();
+importData();
